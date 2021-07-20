@@ -1,0 +1,23 @@
+a[href] {
+  color: violet;
+  text-decoration: none;
+}
+
+a[href="https://alexcgdesign.com/inicio"] {
+  color: darkred;
+}
+
+a[href^=hsttps] {
+  color: darkolivegreen;
+}
+
+a[href$=org] {
+  background: steelblue;
+  color: white;
+}
+
+a[href*=alexcgdesign] {
+  background: darksalmon;
+}
+
+/*# sourceMappingURL=style.css.map */

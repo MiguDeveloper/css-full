@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+}
+.box1 {
+  width: 100%;
+  background: steelblue;
+  margin-bottom: 50px;
+}
+
+.header {
+  background: gold;
+  height: 40px;
+  margin-top: 20px;
+}
+.box2 {
+  background: tomato;
+  margin-top: 30px;
+}

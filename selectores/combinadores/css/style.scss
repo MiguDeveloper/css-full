@@ -1,0 +1,38 @@
+h2,
+h3 {
+  font-size: 28px;
+}
+
+// selector descendiente (espacio)
+.contenedor p {
+  color: aqua;
+}
+
+// selector de hijo directo
+.contenedor > p {
+  color: blueviolet;
+}
+
+nav.contenedor {
+  background: steelblue;
+}
+
+.contenedor a {
+  text-decoration: none;
+  color: firebrick;
+}
+
+.contenedor > a {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+// selector de hermano adyacente: que este en seguida
+h2 + p {
+  color: chocolate;
+}
+
+// selector de todos los hermanos
+h3 ~ p {
+  color: indigo;
+}
