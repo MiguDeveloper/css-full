@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  height: 400px;
+  margin: 30px auto;
+  // los degradados solo funcionan con los bg-image
+  // la sintaxis es la siguiente
+  //background-image: linear-gradient(direccion, color stop, color stop, color stop);
+  // la direccion es: to top, to bottom, to left, to right
+  background-image: linear-gradient(to bottom right, crimson, pink);
+}
+
+.header {
+  height: 600px;
+  background-image: linear-gradient(#00008b7e, #4683b481), url(img/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid transparent;
+}
+
+.title {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 270px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}

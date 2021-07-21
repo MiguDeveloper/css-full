@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.background {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.background h3 {
+  font-size: 4rem;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(img/hero.jpg);
+}
+.hero__mensaje h1 {
+  background-color: black;
+  color: white;
+  padding: 25px;
+  font-size: 26px;
+}
+
+.mensaje {
+  display: flex;
+  margin: 70px 0;
+}
+.mensaje__content {
+  text-align: center;
+  padding: 0 50px;
+}
+.mensaje__content h2 {
+  margin-bottom: 12px;
+}
+
+.section2 {
+  background-image: url(img/fondo1.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  color: white;
+  text-align: center;
+}
+
+.section3 {
+  background-image: url(img/fondo2.png);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 45px 0;
+  color: rgb(255, 255, 255);
+  // el rgb va de 0 a 255
+  // podemos darle el alfa con rgba() el alfa va de 0 a 1 como máximo
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8);
+  // hsl (matiz, saturacion, lightness)
+  // matriz: o - 360
+  // saturacion: 0% - 100%
+  // brillo: 0% - 100%
+  background: hsl(0, 100%, 20%);
+  background: hsla(0, 100%, 20%, 0.5);
+}
+.title {
+  text-align: center;
+}
