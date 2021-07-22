@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import 'variables';
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background-image: var(--gradient);
+}
+
+.card {
+  background: white;
+  width: 300px;
+  margin: 30px auto;
+  padding: 30px 20px;
+  box-shadow: var(--box-shadow);
+
+  &__title {
+    font-size: 30px;
+    color: var(--color-primario);
+    margin-bottom: 20px;
+  }
+
+  &__cta {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-image: var(--gradient);
+  }
+}
+
+.card2 {
+  background: white;
+  width: 300px;
+  margin: 30px auto;
+  padding: 30px 20px;
+  box-shadow: var(--box-shadow);
+
+  &__title {
+    font-size: 30px;
+    color: var(--color-primario, var(--color-fallback, crimson));
+    margin-bottom: 20px;
+  }
+}

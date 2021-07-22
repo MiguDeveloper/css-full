@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+:root {
+  --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-principal: linear-gradient(135deg, #667eea86 0%, #764ba28e 100%);
+  --url-image: url("img/bg.jpg");
+  --box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);
+  --radius: 8px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.hero {
+  background-image: var(--gradient-principal), var(--url-image);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.hero__contact {
+  background: white;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--radius);
+  padding: 30px 20px 40px;
+  width: 400px;
+}
+@media (max-width: 39.9375em) {
+  .hero__contact {
+    width: 90%;
+  }
+}
+.hero__form {
+  display: flex;
+  flex-direction: column;
+}
+.hero__form__title {
+  color: black;
+  font-size: 2rem;
+  margin: 10px 0 40px;
+  text-align: center;
+}
+.hero__form__input {
+  border: 1px solid #b39b9b;
+  margin-bottom: 20px;
+  padding: 20px 5px;
+  font-family: "Raleway", sans-serif;
+}
+.hero__form__input::placeholder {
+  font-family: "Raleway", sans-serif;
+}
+.hero__form__message {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 150px;
+  max-height: 150px;
+}
+.hero__form__submit {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  padding: 15px 0;
+  background-image: var(--gradient);
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.hero__form__submit:hover {
+  background-image: var(--gradient-principal);
+  transition: background-image 0.6s;
+}
+
+/*# sourceMappingURL=style.css.map */
