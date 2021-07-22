@@ -1,0 +1,101 @@
+:root {
+  --salmon: salmon;
+}
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--salmon);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  width: 300px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: -20px -20px 0 0 #fb968b;
+
+  &__title {
+    border-bottom: 3px solid var(--salmon);
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+    &::first-letter {
+      font-size: 2rem;
+      letter-spacing: 20px;
+    }
+  }
+}
+
+// Pseudoelemento lleavan ::
+// selection: modifica la manera como seleccionamos segun los estilos que le definamos
+// si queremos que aplique a todo: *::selection
+p::selection {
+  background: orange;
+  color: white;
+}
+
+p::first-line {
+  color: #fb968b;
+  font-weight: bold;
+}
+
+input[type='text'] {
+  margin-left: 20px;
+  padding: 15px 3px;
+  background: crimson;
+  color: white;
+  border: none;
+  border-bottom: 4px solid white;
+  outline: none;
+  &::placeholder {
+    color: white;
+  }
+}
+
+/*
+<element>
+::before
+contenido
+::after
+</element>
+*/
+
+.egBeAf {
+  color: black;
+  display: block;
+  &::before {
+    content: 'Antes(before) ';
+  }
+  &::after {
+    content: ' Despues(after)';
+  }
+}
+
+ul {
+  counter-reset: contador;
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 10px;
+  &::before {
+    content: counter(contador);
+    counter-increment: contador;
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 4px;
+  }
+}

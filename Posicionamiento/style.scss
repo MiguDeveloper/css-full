@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 300vh;
+}
+.container {
+  width: 450px;
+  height: 530px;
+  margin: 20px auto;
+  border: 5px solid crimson;
+  color: white;
+  position: relative;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: steelblue;
+  line-height: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+// IMPORTANTE: el z-index solo sirve para los elementos posicionados
+// como por ejemplo: relative, absolute, fixed
+
+.static {
+  position: static;
+}
+
+.relative {
+  background: crimson;
+  position: relative;
+  // se desbloquea estas propiedades
+  // top: 10rem;
+  // bottom:;
+  // right: ;
+  // left: 200px;
+}
+.absolute {
+  background: purple;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+}
+
+// fixed tbm pierde su espacio en el flujo, y su ubicacion es con respecto al body
+.fixed {
+  background: darkcyan;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  & a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

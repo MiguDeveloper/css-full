@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.box {
+  background: steelblue;
+  width: 55px;
+  height: 55px;
+  margin: 10px 0;
+  margin-left: 5px;
+  text-align: center;
+  line-height: 55px;
+  color: white;
+  font-weight: bold;
+}
+
+.container {
+  margin-left: -5px;
+  padding: 10px 0;
+  border: 3px solid lightcoral;
+}
+
+// Pseudoclases de tipo:
+// seleccionamo al unico elemento(debe haber solo uno de su tipo) en su tipo
+// dentro de su contenedor
+// en este ejemplo estamos especificando el tipo div
+// div:only-of-type {
+//   background: tomato;
+// }
+
+// Seleccionamos al primero de su tipo dentro de su contenedor
+// .box:first-of-type {
+//   background: tomato;
+// }
+
+// Ahora seleccionamos al ultimo en su tipo
+// .box:last-of-type {
+//   background: tomato;
+// }
+
+// Seleccionamos en una posicion especifica en su tipo de su contenedor
+// podemos pasarle como parametro los pares e impares(even y odd)
+// n nos permite hacer patrones de seleccion
+// n = 0,1,2,3
+// 2n => 2(0), 2(1), 2(2), ...
+// .box:nth-of-type(2n) {
+//   background: tomato;
+// }
+
+// ahora podemos revertir el orden en que se contabiliza, ya no de arriba hacia abajo
+// sino todo lo contrario
+
+// .box:nth-last-of-type(1) {
+//   background: tomato;
+// }
+
+// Pseudoclase child
+
+// seleccionamos a los que no tienen hermanos, hijos unicos no importa el tipo
+// .box:only-child {
+//   background: tomato;
+// }
+
+// seleccionamos al primer hijo de su contenedor
+// .box:first-child {
+//   background: tomato;
+// }
+
+// por el contrario tenemos a last-child
+// div:last-child {
+//   background: tomato;
+// }
+
+// :nth-child(): seleccionar a uno o varios elementos segun queramos
+// div:nth-child(4) {
+//   background: crimson;
+// }
+
+// si queremos voltear el orden de seleccion y ponerlo de abajo hacia arriba
+// usarmemos :nth-last-child()
+// .container :nth-last-child(1) {
+//   background: crimson;
+// }
