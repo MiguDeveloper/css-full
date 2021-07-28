@@ -1,0 +1,70 @@
+.hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: calc(100vh - var(--height-nav) - var(--padding-top));
+  min-height: 600px;
+
+  @include breakpoint-down(medium) {
+    flex-direction: column;
+    gap: 0;
+    margin-top: var(--padding-top);
+  }
+
+  &__texts {
+    flex: 1;
+
+    @include breakpoint-down(medium) {
+      width: 100%;
+      order: 1;
+      margin-top: var(--padding-top);
+    }
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+
+    @include breakpoint-down(medium) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__paragraph {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 30px 0 0;
+
+    @include breakpoint-down(medium) {
+      font-size: 1rem;
+    }
+  }
+
+  &__picture {
+    flex: 1;
+    @include breakpoint-down(medium) {
+      flex: 0;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+
+    @include breakpoint-down(medium) {
+      max-width: 380px;
+    }
+  }
+}
+
+.cta {
+  text-decoration: none;
+  color: white;
+  background: #6c63ff;
+  border-radius: 6px;
+  padding: 15px 30px;
+  margin-top: 1.5em;
+  display: inline-block;
+}
