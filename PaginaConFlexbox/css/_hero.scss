@@ -1,0 +1,75 @@
+.hero {
+  --padding-container: 0;
+  height: 100vh;
+  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+
+  @include breakpoint-down(small) {
+    height: auto;
+    min-height: 100vh;
+    --padding-container: 40px 0;
+  }
+
+  &__texts {
+    flex: 1;
+    color: white;
+  }
+
+  &__title {
+    font-size: 4rem;
+
+    @include breakpoint-down(small) {
+      font-size: 3.5rem;
+    }
+
+    @include breakpoint-down(dwsmall) {
+      font-size: 2.8rem;
+    }
+  }
+
+  &__copy {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  &__img {
+    flex: 1;
+
+    @include breakpoint-down(small) {
+      flex: none;
+      width: 60%;
+      margin-bottom: 30px;
+    }
+
+    @include breakpoint-down(dwsmall) {
+      flex: none;
+      width: 85%;
+    }
+  }
+
+  &__picture {
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+
+    @include breakpoint-down(small) {
+      max-width: 85%;
+    }
+
+    @include breakpoint-down(dwsmall) {
+      max-width: 100%;
+    }
+  }
+}
+
+.hero__main {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+
+  @include breakpoint-down(small) {
+    justify-content: center;
+  }
+}

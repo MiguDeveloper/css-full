@@ -1,0 +1,27 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: var(--padding-container);
+}
+
+.title {
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 40px;
+  text-align: var(--align-title);
+
+  @include breakpoint-down(dwsmall) {
+    font-size: 2.2rem;
+  }
+
+  &--margin {
+    margin: 0;
+  }
+}

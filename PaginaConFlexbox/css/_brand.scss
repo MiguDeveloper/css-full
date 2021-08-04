@@ -1,0 +1,13 @@
+.brand {
+  width: 100%;
+  background-color: var(--color-primary);
+
+  &__texts {
+    --color-primary: white;
+    min-height: 150px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

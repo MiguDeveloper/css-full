@@ -1,0 +1,42 @@
+.tecnologias {
+  background: var(--color-bg);
+}
+
+.tecnologia {
+  display: flex;
+  flex-direction: column;
+
+  &-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    @include breakpoint-down(small) {
+      justify-content: space-between;
+    }
+
+    @include breakpoint-down(dwsmall) {
+      justify-content: space-around;
+    }
+  }
+
+  &__img {
+    width: 20%;
+    height: 100px;
+
+    @include breakpoint-down(dwsmall) {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__picture {
+    width: 100%;
+    height: 100%;
+
+    @include breakpoint-down(dwsmall) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+}

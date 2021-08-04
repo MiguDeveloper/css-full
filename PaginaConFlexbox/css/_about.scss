@@ -1,0 +1,53 @@
+.about {
+  display: flex;
+  min-height: 600px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  --align-title: left;
+
+  @include breakpoint-down(small) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__description {
+    flex: 1;
+
+    @include breakpoint-down(small) {
+      --align-title: center;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__paragraph {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+
+    @include breakpoint-down(small) {
+      text-align: left;
+    }
+  }
+
+  &__img {
+    flex: 1;
+    margin: 0;
+  }
+
+  &__picture {
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__cta {
+    display: inline-block;
+    margin-top: 20px;
+    background: var(--color-primary);
+    padding: 20px 40px;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+  }
+}
