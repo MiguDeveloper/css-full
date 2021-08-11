@@ -1,0 +1,11 @@
+:root {
+  --font: 'Inter', sans-serif;
+  --color-primary: #2658e4;
+  --card-columns: repeat(5, 1fr);
+  --card-rows: repeat(8, 1fr);
+
+  @include breakpoint-down(small) {
+    --card-columns: 1fr;
+    --card-rows: repeat(2, 1fr);
+  }
+}
