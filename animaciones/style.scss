@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cuadrado {
+  width: 400px;
+  height: 400px;
+  background: steelblue;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.spiderman {
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+  animation: moverSpiderman 10s;
+}
+
+@keyframes moverSpiderman {
+  0% {
+    background: black;
+  }
+
+  30% {
+    background: crimson;
+  }
+  90% {
+    background: tomato;
+  }
+}
