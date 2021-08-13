@@ -5,29 +5,52 @@
 }
 
 .cuadrado {
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   background: steelblue;
   margin: 40px auto;
   overflow: hidden;
+  animation-name: animaciones;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+.cuadrado:hover {
+  animation-play-state: running;
 }
 
 .spiderman {
   width: 200px;
   margin: 0 auto;
   display: block;
-  animation: moverSpiderman 10s;
 }
 
+@keyframes animaciones {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 @keyframes moverSpiderman {
   0% {
-    background: black;
+    transform: translateY(-50px);
   }
   30% {
-    background: crimson;
+    transform: translateY(0) rotate(5deg);
   }
-  90% {
-    background: tomato;
+  50% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: translateY(-50px);
   }
 }
 
