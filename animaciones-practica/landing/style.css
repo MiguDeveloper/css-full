@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Prata&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ede8e2;
+  height: 100vh;
+  display: flex;
+  font-family: "Prata", serif;
+}
+
+.grid {
+  width: 90%;
+  max-width: 1200px;
+  height: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  box-shadow: 0 0 30px -10px rgba(138, 135, 135, 0.5);
+  overflow: hidden;
+  background: white;
+}
+.grid::before {
+  content: "";
+  grid-column: 4/-1;
+  grid-row: 1/-1;
+  background-image: url(garden.jpg);
+  background-position: right top;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  animation: show 2s 3.5s ease forwards;
+}
+.grid__text {
+  grid-column: 2/8;
+  grid-row: 2/-2;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translate(50%);
+  animation: show 2s forwards, move 1s 2s forwards;
+}
+.grid__title {
+  font-size: 6rem;
+}
+.grid__title--transform {
+  font-family: "Playfair Display", serif;
+  font-size: 4.5rem;
+  transform: translate(20%);
+  animation: move 1s 2s forwards;
+}
+
+@keyframes show {
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@keyframes move {
+  to {
+    transform: translate(0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
